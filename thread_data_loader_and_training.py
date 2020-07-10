@@ -48,17 +48,15 @@ class data_loader:
         self.data_swap    = None
         self.data_loading = None
         self.ready_flag = [False]
+        self.swap_flag = [True]
         self.loader_lapse = 2
         self.itr = 0
 
     def run(self):
 
-        #print('start loading data..iteration ',self.itr) 
         self.ready_flag[0] = False
-        self.load_data()
-        self.swap_data()
+        self.load_data() # load into data_loading
         self.ready_flag[0] = True
-        #print('end: data waiting to get fetched: itr ',self.itr) 
         self.itr += 1
 
     # swap data_loading with data_ready
@@ -69,15 +67,17 @@ class data_loader:
 
         self.data_swap = self.data_loading
         self.data_loading = self.data_ready
-        # do the final swap only after trainer fetch the
-        # previous set of data
-        query_flag = [not i for i in self.ready_flag]
-        holdon(query_flag,name='swap data lock')
+        # do the final swap only after trainer query
+        # for the next set of data
         self.data_ready = self.data_swap 
+        self.swap_flag[0] = True
 
     # load data into data_loading 
     # which is a holding place for data
     def load_data(self):
+        # load data only if it has been swapped out
+        holdon(self.swap_flag,name='swap data lock')
+        self.swap_flag[0] = False
         self.data_loading = self.itr*np.ones(4)
         for i in range(self.loader_lapse):
             print('loading ',i,'/',self.loader_lapse,\
@@ -87,9 +87,8 @@ class data_loader:
     # check that data is ready and then fetch it
     def fetch_data(self):
 
-        #print('start fetch data')
         holdon(self.ready_flag,name='fetch data lock')
-        #print('end fecth data : to load more data for standby ')
+        self.swap_data() # swap the data and return data
         return self.data_ready
 
 # ===================================================

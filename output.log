@@ -1,58 +1,58 @@
+swap data lock -- released 
 loading  0 / 2  iteration  [0. 0. 0. 0.]
 loading  1 / 2  iteration  [0. 0. 0. 0.]
-swap data lock -- released 
-starting thread for  <__main__.MLtrainer object at 0x108c0f850>
+starting thread for  <__main__.MLtrainer object at 0x103675190>
 fetch data lock -- released 
 training  0 / 3  on data  [0. 0. 0. 0.]
-starting thread for  <__main__.data_loader object at 0x108c0f790>
-loading  0 / 2  iteration  [1. 1. 1. 1.]
-loading  1 / 2  iteration  [1. 1. 1. 1.]
-training  1 / 3  on data  [0. 0. 0. 0.]
-training  2 / 3  on data  [0. 0. 0. 0.]
+starting thread for  <__main__.data_loader object at 0x1036750d0>
 swap data lock -- released 
-exiting thread for  <__main__.data_loader object at 0x108c0f790>
-exiting thread for  <__main__.MLtrainer object at 0x108c0f850>
-starting thread for  <__main__.MLtrainer object at 0x108c0f850>
+loading  0 / 2  iteration  [1. 1. 1. 1.]
+training  1 / 3  on data  [0. 0. 0. 0.]
+loading  1 / 2  iteration  [1. 1. 1. 1.]
+training  2 / 3  on data  [0. 0. 0. 0.]
+exiting thread for  <__main__.data_loader object at 0x1036750d0>
+exiting thread for  <__main__.MLtrainer object at 0x103675190>
+starting thread for  <__main__.MLtrainer object at 0x103675190>
 fetch data lock -- released 
 training  0 / 3  on data  [1. 1. 1. 1.]
-starting thread for  <__main__.data_loader object at 0x108c0f790>
+starting thread for  <__main__.data_loader object at 0x1036750d0>
+swap data lock -- released 
 loading  0 / 2  iteration  [2. 2. 2. 2.]
 training  1 / 3  on data  [1. 1. 1. 1.]
 loading  1 / 2  iteration  [2. 2. 2. 2.]
-swap data lock -- released 
-exiting thread for  <__main__.data_loader object at 0x108c0f790>
 training  2 / 3  on data  [1. 1. 1. 1.]
-exiting thread for  <__main__.MLtrainer object at 0x108c0f850>
-starting thread for  <__main__.MLtrainer object at 0x108c0f850>
+exiting thread for  <__main__.data_loader object at 0x1036750d0>
+exiting thread for  <__main__.MLtrainer object at 0x103675190>
+starting thread for  <__main__.MLtrainer object at 0x103675190>
 fetch data lock -- released 
 training  0 / 3  on data  [2. 2. 2. 2.]
-starting thread for  <__main__.data_loader object at 0x108c0f790>
+starting thread for  <__main__.data_loader object at 0x1036750d0>
+swap data lock -- released 
 loading  0 / 2  iteration  [3. 3. 3. 3.]
 training  1 / 3  on data  [2. 2. 2. 2.]
 loading  1 / 2  iteration  [3. 3. 3. 3.]
 training  2 / 3  on data  [2. 2. 2. 2.]
-swap data lock -- released 
-exiting thread for  <__main__.data_loader object at 0x108c0f790>
-exiting thread for  <__main__.MLtrainer object at 0x108c0f850>
-starting thread for  <__main__.MLtrainer object at 0x108c0f850>
+exiting thread for  <__main__.data_loader object at 0x1036750d0>
+exiting thread for  <__main__.MLtrainer object at 0x103675190>
+starting thread for  <__main__.MLtrainer object at 0x103675190>
 fetch data lock -- released 
 training  0 / 3  on data  [3. 3. 3. 3.]
-starting thread for  <__main__.data_loader object at 0x108c0f790>
+starting thread for  <__main__.data_loader object at 0x1036750d0>
+swap data lock -- released 
 loading  0 / 2  iteration  [4. 4. 4. 4.]
 training  1 / 3  on data  [3. 3. 3. 3.]
 loading  1 / 2  iteration  [4. 4. 4. 4.]
+exiting thread for  <__main__.data_loader object at 0x1036750d0>
 training  2 / 3  on data  [3. 3. 3. 3.]
-swap data lock -- released 
-exiting thread for  <__main__.data_loader object at 0x108c0f790>
-exiting thread for  <__main__.MLtrainer object at 0x108c0f850>
-starting thread for  <__main__.MLtrainer object at 0x108c0f850>
+exiting thread for  <__main__.MLtrainer object at 0x103675190>
+starting thread for  <__main__.MLtrainer object at 0x103675190>
 fetch data lock -- released 
 training  0 / 3  on data  [4. 4. 4. 4.]
-starting thread for  <__main__.data_loader object at 0x108c0f790>
+starting thread for  <__main__.data_loader object at 0x1036750d0>
+swap data lock -- released 
 loading  0 / 2  iteration  [5. 5. 5. 5.]
 training  1 / 3  on data  [4. 4. 4. 4.]
 loading  1 / 2  iteration  [5. 5. 5. 5.]
 training  2 / 3  on data  [4. 4. 4. 4.]
-swap data lock -- released 
-exiting thread for  <__main__.data_loader object at 0x108c0f790>
-exiting thread for  <__main__.MLtrainer object at 0x108c0f850>
+exiting thread for  <__main__.data_loader object at 0x1036750d0>
+exiting thread for  <__main__.MLtrainer object at 0x103675190>
